@@ -50,7 +50,7 @@ USER renderer
 
 # Configure stylesheet
 WORKDIR /home/renderer/src
-RUN git clone https://github.com/gravitystorm/openstreetmap-carto.git
+RUN git clone https://github.com/vkirkl/openstreetmap-carto.git
 WORKDIR /home/renderer/src/openstreetmap-carto
 USER root
 RUN apt-get install -y npm nodejs
