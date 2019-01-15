@@ -34,6 +34,7 @@ fi
 
 if [ "$1" = "run" ]; then
     # Initialize PostgreSQL and Apache
+    a2enmod headers
     service postgresql start
     service apache2 restart
 
